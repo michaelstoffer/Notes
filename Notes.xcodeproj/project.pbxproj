@@ -62,18 +62,58 @@
 		D6F84DA92277DE7F00A23035 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				D6F84DBC2277E9BA00A23035 /* NotesViewController.swift */,
-				D6F84DC22277F34F00A23035 /* NoteTableViewCell.swift */,
-				D6F84DAA2277DE7F00A23035 /* AppDelegate.swift */,
-				D6F84DAE2277DE7F00A23035 /* Main.storyboard */,
-				D6F84DC42277FFEF00A23035 /* NoteDetailViewController.swift */,
-				D6F84DBE2277EDAA00A23035 /* Note.swift */,
-				D6F84DC02277EDE700A23035 /* NoteController.swift */,
-				D6F84DB12277DE7F00A23035 /* Assets.xcassets */,
-				D6F84DB32277DE7F00A23035 /* LaunchScreen.storyboard */,
-				D6F84DB62277DE7F00A23035 /* Info.plist */,
+				D6F84DC922787A9D00A23035 /* Model */,
+				D6F84DCA22787AAA00A23035 /* Model Controllers */,
+				D6F84DC822787A9100A23035 /* View Controllers */,
+				D6F84DC72278773600A23035 /* Storyboards */,
+				D6F84DC62278772300A23035 /* Resources */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		D6F84DC62278772300A23035 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D6F84DAA2277DE7F00A23035 /* AppDelegate.swift */,
+				D6F84DB12277DE7F00A23035 /* Assets.xcassets */,
+				D6F84DB62277DE7F00A23035 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D6F84DC72278773600A23035 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D6F84DAE2277DE7F00A23035 /* Main.storyboard */,
+				D6F84DB32277DE7F00A23035 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D6F84DC822787A9100A23035 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6F84DBC2277E9BA00A23035 /* NotesViewController.swift */,
+				D6F84DC22277F34F00A23035 /* NoteTableViewCell.swift */,
+				D6F84DC42277FFEF00A23035 /* NoteDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D6F84DC922787A9D00A23035 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6F84DBE2277EDAA00A23035 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6F84DCA22787AAA00A23035 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6F84DC02277EDE700A23035 /* NoteController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XVDLP5XYQ;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Notes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XVDLP5XYQ;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Notes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
