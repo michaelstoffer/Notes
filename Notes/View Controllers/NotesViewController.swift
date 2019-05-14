@@ -65,7 +65,6 @@ extension NotesViewController: UITableViewDataSource {
             let note = self.notesController.notes[indexPath.row]
             self.notesController.deleteNote(withNote: note)
             tableView.deleteRows(at: [indexPath], with: .fade)
-            tableView.reloadData()
         }
     }
 }
