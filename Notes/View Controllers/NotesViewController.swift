@@ -59,6 +59,15 @@ extension NotesViewController: UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let note = self.notesController.notes[indexPath.row]
+            self.notesController.deleteNote(withNote: note)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+        }
+    }
 }
 
 extension NotesViewController: NoteTableViewCellDelegate {

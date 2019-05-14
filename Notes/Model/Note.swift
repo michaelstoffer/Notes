@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Note {
+struct Note: Equatable {
     var text: String
 }

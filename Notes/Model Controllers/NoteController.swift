@@ -23,4 +23,9 @@ class NoteController {
         let note = Note(text: text)
         notes.append(note)
     }
+    
+    func deleteNote(withNote note: Note) {
+        guard let index = notes.firstIndex(of: note) else { return }
+        self.notes.remove(at: index)
+    }
 }
